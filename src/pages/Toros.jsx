@@ -2,8 +2,11 @@ import React from 'react'
 import toros from './data/toros'
 import Heading from './components/widgets/Heading'
 import Carts from './components/widgets/Carts'
+import { useState, useEffect } from 'react';
+
 
 function Toros() {
+  
   return (
     <div>
       <Heading name='Toros' />
@@ -13,7 +16,7 @@ function Toros() {
         ))}
       </div>
     </div>
-  )
+  );
 }
 
 export default Toros

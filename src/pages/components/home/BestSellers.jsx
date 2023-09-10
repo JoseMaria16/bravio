@@ -1,4 +1,5 @@
 import React from 'react'
+import { Link } from 'react-router-dom'
 const data = [
     {
         img: '../gorros/home/1.png',
@@ -66,7 +67,10 @@ function BestSellers() {
                     <h4 className='text-center text-xl pt-3'>{element.name}</h4>
                     <p className='text-center pt-1 pb-0 sm:hidden xl:flex'>$<span>{element.price}</span></p>
                     </div>
-                    <a href={element.path} target='_blank' className='text-xs flex mx-auto mt-2 border-1 xl:mb-0 rounded-lg bg-gray-100 w-max px-3 py-1 sm:mb-2 xl:pb-2'>see more.</a>
+                    <div className='justify-center items-center flex'>
+                    <Link to={element.path} about='see more' title='see more..' className='text-xs mx-auto mt-2 border-1 mb-0 rounded-lg bg-gray-100 w-max px-3 py-1'>see more</Link>
+                    </div>
+
                 </div> 
             ))}
             </div>

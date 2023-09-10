@@ -1,4 +1,5 @@
 import React from 'react'
+import { Link } from 'react-router-dom'
 
 const data = [
     {
@@ -48,8 +49,8 @@ function Featured() {
                     </div>
                     <h4 className='text-center text-xl xl:pt-0'>{element.name}</h4>
                     <p className='text-center pb-0'>$<span>{element.price}</span></p>
-                    <a href={element.path} className=' text-xs mx-auto mt-2 border-1 mb-3 rounded-lg bg-gray-100 w-max px-3 py-1'>see more.</a>
-                </div> 
+                    <Link to={element.path} about='see more' title='see more..' className='text-xs mx-auto mt-2 border-1 mb-3 rounded-lg bg-gray-100 w-max px-3 py-1'>see more</Link>
+                </div>  
             ))}
             </div>
         </div>
