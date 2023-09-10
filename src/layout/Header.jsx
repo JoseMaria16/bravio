@@ -9,7 +9,6 @@ function Header() {
                 <button onClick={() => setOpen(false)} className='text-3xl font-medium pb-10'>X</button>
                 <ul className='flex gap-5 flex-col text-base font-medium uppercase'>
                     <li><Link to={'/'}>Inicio</Link></li>
-                    <li><Link to={'/promociones'}>Promociones</Link></li>
                     <li><Link to={'/camana'}>Camana</Link></li>
                     <li><Link to={'/caballos'}>Caballos</Link></li>
                     <li><Link to={'/gallos'}>Gallos</Link></li>
@@ -59,7 +58,6 @@ function Header() {
                 </div>
                 <ul className='flex gap-10 uppercase font-medium text-2'>
                     <li><Link to={'/'}>Inicio</Link></li>
-                    <li><Link to={'/promociones'}>Promociones</Link></li>
                     <li><Link to={'/camana'}>Camana</Link></li>
                     <li><Link to={'/caballos'}>Caballos</Link></li>
                     <li><Link to={'/gallos'}>Gallos</Link></li>
