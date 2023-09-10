@@ -9,7 +9,7 @@ function Home() {
     <>
     <Inicio />
     <Featured />
-    <BestSellers />
+    <BestSellers /> 
     <Footer />
     </>
   )

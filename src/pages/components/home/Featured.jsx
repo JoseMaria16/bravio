@@ -5,25 +5,29 @@ const data = [
         img: '../gorros/home/featured-1.png',
         name: 'White Hat',
         price: 54,
-        id:1
+        id:1,
+        path: '/gallos'
     },
     {
         img: '../gorros/home/featured-2.png',
         name: 'White Hat',
         price: 54,
-        id: 2
+        id: 2,
+        path: '/gallos'
     },
     {
         img: '../gorros/home/featured-3.png',
         name: 'White Hat',
         price: 54,
-        id: 3
+        id: 3,
+        path: '/caballos'
     },
     {
         img: '../gorros/home/featured-4.png',
         name: 'White Hat',
         price: 54,
-        id: 4
+        id: 4,
+        path: '/toros'
     }
 ]
 
@@ -44,7 +48,7 @@ function Featured() {
                     </div>
                     <h4 className='text-center text-xl xl:pt-0'>{element.name}</h4>
                     <p className='text-center pb-0'>$<span>{element.price}</span></p>
-                    <p className=' text-xs mx-auto mt-2 border-1 mb-3 rounded-lg bg-gray-100 w-max px-3 py-1'>see more.</p>
+                    <a href={element.path} className=' text-xs mx-auto mt-2 border-1 mb-3 rounded-lg bg-gray-100 w-max px-3 py-1'>see more.</a>
                 </div> 
             ))}
             </div>

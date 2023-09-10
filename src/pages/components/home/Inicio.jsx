@@ -9,7 +9,7 @@ function Inicio() {
         <p className='px-6 sm:px-[10%] lg:px-0 lg:w-[80%]'>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dolor, officia, ipsa hic ab voluptates iusto numquam sequi deleniti alias aspernatur a</p>
         <p  className='text-2xl font-semibold hidden lg:flex gap-4'><span className='text-2xl font-medium'>CEO: </span>Breyson Riega</p>
       </div>
-      <div className="imgs relative">
+      <div className="imgs relative hover:scale-125 duration-300">
         <img className='w-[200px] md:w-[300px] mx-auto lg:w-[400px] lg:mr-32' src="../gorro.png" alt="" />
       </div>
     </div>
