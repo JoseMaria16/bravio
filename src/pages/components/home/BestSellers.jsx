@@ -1,5 +1,8 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
+import { motion } from 'framer-motion'
+
+
 const data = [
     {
         img: '../gorros/home/1.png',
@@ -46,10 +49,19 @@ const data = [
 ]
 
 function BestSellers() {
-  
+    const list = {
+        visible: { opacity: 1, y: -200 },
+        hidden: { opacity: 0, duration: 1 },
+    }
   return (
-    <div className='h-max'>
-            <div className="info text-center relative py-14">
+    <motion.div
+    initial="hidden"
+    whileInView="visible"
+    variants={list}
+    viewport={{ once: true }}
+    transition={{ delay: 0.5, duration:1 }}
+    className='h-max'>
+            <div className="info text-center relative pt-32 pb-24">
                 <h2 className='uppercase text-[70px] opacity-10 font-bold md:text-[60px] lg:text-8xl xl:text-9xl lg:tracking-widest   '>PRODUCT</h2>
                 <h2 className='font-bold text-4xl -mt-[4.4rem] md:mt-[-4rem] xl:text-6xl xl:-mt-[5rem]'>best sellers</h2>
                 <h3 className='uppercase font-semibold'>products</h3>
@@ -75,7 +87,7 @@ function BestSellers() {
             ))}
             </div>
             </div>
-        </div>
+        </motion.div>
   )
 }
 
